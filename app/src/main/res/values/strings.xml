@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="strRed">Red</string>
+    <string name="strGreen">Green</string>
+    <string name="strBlue">Yellow</string>
+
+    <string-array name="img_array">
+        <item>__Select Image__</item>
+        <item>Car_1</item>
+        <item>Car_2</item>
+        <item>Car_3</item>
+        <item>Car_4</item>
+    </string-array>
+    <string-array name="animi_array">
+        <item>__Select Animation__</item>
+        <item>Alpha</item>
+        <item>Rotate</item>
+        <item>Translate</item>
+        <item>Scale</item>
+    </string-array>
+</resources>
