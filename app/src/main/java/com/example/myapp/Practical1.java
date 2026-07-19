@@ -2,7 +2,6 @@ package com.example.myapp;
 
 import android.os.Bundle;
 import android.widget.Toast; // Added Toast import
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -22,43 +21,46 @@ public class Practical1 extends AppCompatActivity {
             return insets;
         });
 
-        // Toast message for onCreate
-        Toast.makeText(this, "onCreate() called", Toast.LENGTH_SHORT).show();
+        ToastMsg("onCreate");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Toast.makeText(this, "onStart() called", Toast.LENGTH_SHORT).show();
+        ToastMsg("onStart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Toast.makeText(this, "onResume() called", Toast.LENGTH_SHORT).show();
+        ToastMsg("onResume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Toast.makeText(this, "onPause() called", Toast.LENGTH_SHORT).show();
+        ToastMsg("onPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Toast.makeText(this, "onStop() called", Toast.LENGTH_SHORT).show();
+        ToastMsg("onStop");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Toast.makeText(this, "onRestart() called", Toast.LENGTH_SHORT).show();
+        ToastMsg("onRestart");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Toast.makeText(this, "onDestroy() called", Toast.LENGTH_SHORT).show();
+        ToastMsg("onDestroy");
+    }
+    private void ToastMsg(String methodName) {
+        String message = methodName + "() called";
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }
