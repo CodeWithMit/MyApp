@@ -3,10 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".Practical3">
+
     <TextView
         android:id="@+id/txtNo"
         android:layout_width="match_parent"
@@ -14,24 +16,24 @@
         android:inputType="text"
         android:text="MIT SADAT 38"
         android:textSize="20dp" />
+
     <ImageView
+        android:id="@+id/imgV"
         android:layout_width="800px"
         android:layout_height="800px"
-        android:id="@+id/imgV"
         android:scaleType="fitCenter"
-        android:src="@drawable/car1"
-    />
+        android:src="@drawable/car1" />
+
     <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/sp1"
-        android:entries="@array/img_array"
-        />
-    <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:entries="@array/img_array" />
+
+    <Spinner
         android:id="@+id/sp2"
-        android:entries="@array/animi_array"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/animi_array" />
 
 </LinearLayout>
