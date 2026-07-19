@@ -7,32 +7,30 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Practical3">
-
     <TextView
         android:id="@+id/txtNo"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="text"
         android:text="MIT SADAT 38"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/imgV"
-        android:layout_width="800px"
-        android:layout_height="800px"
-        android:scaleType="fitCenter"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:src="@drawable/car1" />
 
     <Spinner
         android:id="@+id/sp1"
-        android:layout_width="match_parent"
+        style="@style/Widget.AppCompat.Spinner"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/img_array" />
 
     <Spinner
         android:id="@+id/sp2"
-        android:layout_width="match_parent"
+        style="@style/Widget.AppCompat.Spinner"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/animi_array" />
-
 </LinearLayout>
