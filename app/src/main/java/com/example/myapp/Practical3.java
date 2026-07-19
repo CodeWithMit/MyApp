@@ -3,7 +3,6 @@ package com.example.myapp;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ImageView;
@@ -11,13 +10,11 @@ import android.widget.Spinner;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Practical3 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     Spinner sImg, sAni;
     ImageView iv;
+    AlphaAnimation alpha = new AlphaAnimation(0, 1);
     int[] img = {R.drawable.car1, R.drawable.car2, R.drawable.car3, R.drawable.car4};
     int[] anims = {R.anim.alpha, R.anim.rotate, R.anim.translate, R.anim.scale};
 
@@ -38,7 +35,12 @@ public class Practical3 extends AppCompatActivity implements AdapterView.OnItemS
         if (adapterView.getId() == R.id.sp1) {
             iv.setImageResource(img[i - 1]);
         } else {
-            iv.startAnimation(AnimationUtils.loadAnimation(this, anims[i - 1]));
+            if(i==1){
+                alpha.setDuration(3000);
+                iv.startAnimation(alpha);
+            }else {
+                iv.startAnimation(AnimationUtils.loadAnimation(this, anims[i - 1]));
+            }
         }
     }
     @Override public void onNothingSelected(AdapterView<?> adapterView) {}
