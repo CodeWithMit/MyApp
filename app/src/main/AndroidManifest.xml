@@ -21,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Activity2"
             android:exported="false"
@@ -46,17 +45,23 @@
         <activity
             android:name=".Extra1Spinner"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Practical3"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Practical1"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize" >
-
-        </activity>
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Practical6"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Practical6_B"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
