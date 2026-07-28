@@ -6,7 +6,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Gallery;
 import android.widget.ImageView;
-
 public class ImageAdapterCar extends BaseAdapter {
     Context context;
     int[] images;
