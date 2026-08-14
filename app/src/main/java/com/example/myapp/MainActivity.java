@@ -12,8 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    String[] pr = {"Pr1", "Pr2", "Pr3", "Pr4", "Pr5","Pr6","PR8"};
-    Class<?>[] classes = {Practical1.class, Practical2_1.class, Practical3.class, Practical4_1.class, Practical5_1.class,Practical6.class,Practical8.class};
+    String[] pr = {"Pr1", "Pr2", "Pr3", "Pr4", "Pr5","Pr6","PR8","PR7"};
+    Class<?>[] classes = {Practical1.class, Practical2_1.class, Practical3.class, Practical4_1.class, Practical5_1.class,Practical6.class,Practical8.class,Practical7.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
