@@ -1,7 +1,4 @@
 package com.example.myapp;
-
-import android.widget.ArrayAdapter;
-
 public class Contact  {
         int image;
         String name;
