@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:orientation="vertical"
@@ -12,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
+        android:minHeight="32dp"
         android:text="MIT SADAT 38"
         android:textSize="20dp" />
 
@@ -21,7 +21,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Enter File name"
-        android:inputType="text" />
+        android:inputType="text"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/etContent"
