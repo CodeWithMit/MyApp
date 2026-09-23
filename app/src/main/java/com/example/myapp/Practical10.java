@@ -11,9 +11,6 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Practical10 extends AppCompatActivity {
 
@@ -50,9 +47,6 @@ public class Practical10 extends AppCompatActivity {
         btnView.setOnClickListener(v -> {
             Intent i = new Intent(Practical10.this, Pra10_Extra.class);
             startActivity(i);
-
-
-
             //tvResult.setText(data.toString());
         });
         btnUpdate.setOnClickListener(v -> {
@@ -74,8 +68,6 @@ public class Practical10 extends AppCompatActivity {
 
             Toast.makeText(this, "Record Deleted", Toast.LENGTH_SHORT).show();
         });
-
-
 //        btnUpdate.setOnClickListener(v -> {
 //            String id = etId.getText().toString();
 //        });
