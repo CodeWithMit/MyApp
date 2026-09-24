@@ -9,6 +9,12 @@
     android:layout_height="match_parent"
     tools:context=".Practical11"
     android:fitsSystemWindows="true">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="MIT SADAT 38"
+        android:textSize="20dp" />
     <EditText
         android:id="@+id/etNumber"
         android:hint="Enter phone number (e.g., 5556)"
