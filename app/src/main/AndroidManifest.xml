@@ -4,6 +4,22 @@
 
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <!-- Permission to send SMS -->
+    <uses-permission
+        android:name="android.permission.SEND_SMS"
+        tools:ignore="SmsAndCallLogPolicy" />
+    <!-- Permission to receive SMS -->
+    <uses-permission
+        android:name="android.permission.RECEIVE_SMS"
+        tools:ignore="SmsAndCallLogPolicy" />
+    <uses-permission
+        android:name="android.permission.READ_SMS"
+        tools:ignore="SmsAndCallLogPolicy" />
+    <uses-feature android:name="android.hardware.telephony"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -83,6 +99,10 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Pra10_Extra"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Practical11"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
